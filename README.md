@@ -1,9 +1,10 @@
 # sandCastle
 Tool to install tweaks on the rootlessJB3 
+**This Currently only builds the deb files**
 
 ## Instructions
-Run the setup.py to get the program setup and ready to run.
-To use the program start main.py 
+Run the `setup.py` to get the program setup and ready to run.
+To use the program start `main.py`
 
 #### Todo
 - add current repo support
