@@ -5,6 +5,9 @@ Tool to install tweaks on the rootlessJB3
 Run the setup.py to get the program setup and ready to run.
 To use the program start main.py 
 
+#### Todo
+- add current repo support
+- add sync to device support (may need custom bins to install)
 
 ### Credits
 @M4cs for patcherPlus
