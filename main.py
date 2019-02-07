@@ -1,8 +1,10 @@
 import sys
 import os
+import time
 import shutil
 from glob import glob
-import pexpect
+from pexpect import pxssh
+import getpass
 #import pygame
 
 ##FOLDER AND FILE STRUCTURE INTEGRITY
@@ -17,14 +19,13 @@ if not os.path.exists('./SYNC'):
 LDID_PATH = os.path.realpath('/usr/local/bin/ldid2')
 #get current working directory
 cwd = os.getcwd()
+s = pxssh.pxssh()
 
 print('Welcome to sandCastle!')
-clientDevice = str(input('iDevice IPADDRESS: '))
-clientPASS = input('iDevice ROOT Password: ')
-if bool(clientPASS) == False:
-    clientPASS = 'alpine'
+clientDevice = str(input('iDevice IPADDRESS(youcan use devicename.local): '))
 #comple the tweaks into rootlessJB3 things
 directoryDEBS = glob('DEBS/*')
+print(directoryDEBS)
 i = 0
 for debFile in directoryDEBS:
     deb_path = debFile
@@ -42,3 +43,6 @@ for debFile in directoryDEBS:
     i += 1
     
 #sync the files over
+#start local http server
+
+os.system('scp -r SYNC/Library/ root@' + clientDevice + ':/var/containers/Bundle/tweaksupport/')

@@ -5,6 +5,7 @@ os.system('chmod +x patcher')
 os.system('brew install dpkg')
 os.system('pip3 install pygame')
 os.system('pip3 install pexpect')
+os.system('pip3 install getpass')
 #check if directory structure is in place
 #check if directory structure is in place
 if not os.path.exists('./patcher'):
@@ -14,7 +15,6 @@ if not os.path.exists('./DEBS'):
     os.system('mkdir DEBS')
 if not os.path.exists('./SYNC'):
     os.system('mkdir SYNC')
-LDID_PATH = os.path.realpath('/usr/local/bin/ldid2')
 if os.path.exists(LDID_PATH) == True:
     st = os.stat(LDID_PATH)
     oct_perm = oct(st.st_mode)
