@@ -1,13 +1,19 @@
-# sandCastle
+# Orthotrichum X sandCastle 
 Tool to install tweaks on the rootlessJB3 
+**Use my fork of [rootlessJB3](https://github.com/bluetr00p/rootlessJB3) to be able to use sandCastle!!!**
 
 ## Instructions
-Run the setup.py to get the program setup and ready to run.
-To use the program start main.py 
+1. Install [Orthotrichum](https://github.com/bluetr00p/rootlessJB3) (my fork of rotlessJB3)
+2. Clone this project and unzip 
+3. In the dir run `python3 setup.py`
+4. To start run `python3 main.py`
+5. Profit
+
 
 #### Todo
-- add current repo support
-- add sync to device support (may need custom bins to install)
+- Make pygameUI
+- Windows support
+- "Compiled Version"
 
 ### Credits
 @M4cs for patcherPlus
